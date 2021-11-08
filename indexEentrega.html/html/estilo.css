@@ -1,0 +1,492 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #dbdbdb;
+  width: 100%;
+  height: 100%;
+  line-height: 1.6;
+}
+
+/* aca arranca el menu de la pagina */
+#btn-menu {
+  display: none;
+}
+
+header {
+  color: #3b6679;
+  background-color: #3b6679;
+  width: 100%;
+  color: #3b6679;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b6063), color-stop(#70848d), to(#2a5a6e));
+  background-image: linear-gradient(#5b6063, #70848d, #2a5a6e);
+}
+
+header label {
+  display: none;
+  width: 25px;
+  height: 25px;
+  padding: 30px;
+  border-right: 1px solid #fff;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+  margin: o;
+  list-style: none;
+  padding: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu li:hover {
+  -webkit-transform: scale(1.45, 1.45);
+          transform: scale(1.45, 1.45);
+}
+
+.menu li a {
+  display: block;
+  padding: 30px 50px;
+  color: #fff;
+  text-decoration: none;
+  font-style: arial;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  header label {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: #003a53;
+    width: 70%;
+    margin-left: -70%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+  .menu li a :hover {
+    color: #021118;
+  }
+}
+
+#btn-menu:checked ~ .menu {
+  margin: 0;
+}
+
+.fotoPoder {
+  margin: auto;
+}
+
+/* aca arranca la dedscripcion prof */
+.DescripcionMM {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.DescripcionMM :hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: 0,1s;
+  transition: 0,1s;
+}
+
+.contenedorInfo {
+  color: #003a53;
+  text-align: center;
+  margin: 100px 0 100px;
+  padding: 50px;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+}
+
+.contenedorInfo p {
+  font-size: 1.2rem;
+}
+
+/* aca arranca las fotos de oficinas */
+.oficinasMartin :hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: all 0,2s;
+  transition: all 0,2s;
+}
+
+.oficinasMartin {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-color: #70848d;
+}
+
+.oficinas1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.oficinas1 div {
+  width: 300px;
+  margin: 100px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+.oficinaUno {
+  width: 300px;
+  margin: 100px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.oficinaDos {
+  width: 300px;
+  margin: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.oficinaTres {
+  width: 300px;
+  margin: 100px;
+  display: -ms-grid;
+  display: grid;
+}
+
+/* aca arrancan las cartas */
+.tituloAcartas {
+  text-align: center;
+  font-size: 40px;
+  color: #6a6a6a;
+  margin-top: 100px;
+  font-weight: 100;
+}
+
+.conteinerDerecho {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.conteinerDerecho .cartasDerecho {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 30px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.conteinerDerecho .cartasDerecho:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
+}
+
+.conteinerDerecho .cartasDerecho img {
+  width: 330px;
+  height: 220px;
+}
+
+.conteinerDerecho .cartasDerecho h4 {
+  font-weight: 600;
+}
+
+.conteinerDerecho .cartasDerecho p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.conteinerDerecho .cartasDerecho a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498;
+}
+
+/* aca arranca el formulario */
+.fondoFormulario {
+  background-image: url(https://us.123rf.com/450wm/ammentorp/ammentorp1611/ammentorp161100472/66226884-cierre-de-tiro-de-j%C3%B3venes-manos-del-hombre-de-negocios-con-las-notas-pluma-de-escribir-sobre-un-pape.jpg?ver=6);
+  background-size: 100vw 100vw;
+  background-attachment: fixed;
+  margin: 100px 0 100px;
+  height: 600px;
+  margin-top: 150px;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.ContactoForm {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 17px;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#botonE {
+  background: #eedfcf;
+  color: #fff;
+  padding: 20px;
+}
+
+/* aca arranca la ubicacion */
+.ubicacion1 {
+  image-orientation: from-image;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* aca comienza el footer */
+footer {
+  width: 100%;
+  background: #202020;
+  color: white;
+  padding: 40px;
+}
+
+.ConteinerFooterTotal {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.ConteinerBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.columnaUno {
+    max-width: 400px;
+}
+
+.columnaUno h1 {
+    font-size: 22px;
+}
+
+.columnaUno p {
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 20px;
+}
+
+.columnaDos {
+    max-width: 400px;
+}
+
+.columnaDos h1 {
+    font-size: 22px;
+}  
+
+.row {
+    margin: top 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.row img {
+    width: 36px;
+    height: 36px;
+}  
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #c7c7c7;
+} 
+
+.columnaTres {
+    max-width: 400px;
+}
+
+.columnaTres h1 {
+    font-size: 22px;
+}
+
+.rowDos {
+    margin-top: 20px;
+}
+
+.rowDos img {
+    width: 36px;
+    height: 36px;
+}
+
+.rowDos label {
+    margin-left: 20px;
+    max-width: 170px;
+    max-width: 140px;
+}
+
+/* aca arranca las ramas del derecho */
+.DPenal {
+    color: #003a53;
+    background-color: #bfc8b6;
+}
+
+.DCivil {
+    color: #003a53;
+    background-color: #bfc8b6;
+}
+
+.DLaboral {
+    color: #003a53;
+    background-color: #bfc8b6;
+}
+
+.DComercial {
+    color: #003a53;
+    background-color: #bfc8b6;
+}
+
+/* aca arranca la pagina civil */
+
+.DCivil {
+  color: #003a53;
+  background-color: #bfc8b6;
+}
+
+.responsiveCivil{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inFlex{
+flex: 1;
+min-width: 250px;
+
+}
+
+.inFlex:first-child{
+  flex: 2;
+  padding: 25px;
+  background-color: #fff;
+  margin-bottom: 0px;
+}
+
+.inFlex div{
+  padding: 25px;
+  background-color: #fff;
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=estilo.css.map */
